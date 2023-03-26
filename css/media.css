@@ -1,0 +1,11 @@
+@media(max-width:1500px) {
+    .gallery_block-wrapper{
+        display: block;
+    }
+    .gallery_img,
+    .gallery_up,
+    .gallery_down{
+        display: block;
+    }
+
+}
