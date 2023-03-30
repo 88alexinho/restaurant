@@ -62,6 +62,31 @@
         top: 26%;
         left: 26%;
     }
+    .sales_wrapper{
+        z-index: 999;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }  
+    .sales_block{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        z-index: 999;
+        padding-bottom: 30px;
+    }
+    .sales:before {
+        z-index: -1;
+    }
+    .sales_title {
+        font-size: 35px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .sales_text{
+        font-size: 25px;
+    }
 }
 @media(max-width:1500px) {
 
@@ -80,6 +105,18 @@
 }
 
 @media(max-width:1300px) {
+    .intro{
+        height: 450px;
+    }
+    .intro_title{
+        font-size:  24px;
+    }
+    .intro_subtitle{
+        font-size: 42px;
+    }
+    .intro_text{
+        font-size: 12px;
+    }
 
     .menu_wrapper{
         display: block;
@@ -102,19 +139,23 @@
         margin-right: 0;
         margin-bottom: 30px;
     }
-    .sales_wrapper{
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-    }
-    .sales_block{
-        width: 100%;
-        text-align: center;
-        padding-bottom: 20px;
-    }
+      
     .btn{
         text-align: center;;
+    }
+    .sales{
+        margin-bottom: 100px;
+    }
+    .sales_title {
+        font-size: 25px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .sales_text{
+        font-size: 15px;
+    }
+    .dishes{
+        display: none;
     }
    
 }
@@ -122,6 +163,22 @@
 @media(max-width:980px) {
     .container{
         margin: 0px 150px;
+    }
+    .header_img{
+        height: 60px;
+        width: auto;
+    }
+    .intro{
+        height: 350px;
+    }
+    .intro_title{
+        font-size:  16px;
+    }
+    .intro_subtitle{
+        font-size: 32px;
+    }
+    .intro_text{
+        font-size: 10px;
     }
     .history_block-counter{
         display: block;
@@ -135,4 +192,59 @@
     .menu{
         margin-bottom: 50px;
     }
+    .sales{
+        margin-top:100px;
+    }
+}
+
+@media(max-width:680px) {
+    .container{
+        margin: 0;
+    }
+    .intro{
+        height: 350px;
+    }
+    .intro_title{
+        font-size:  12px;
+    }
+    .intro_subtitle{
+        font-size: 24px;
+    }
+    .intro_text{
+        font-size: 10px;
+    }
+
+
+}
+
+@media(max-width:550px) {
+     .intro{
+        height: 350px;
+    }
+    .intro_wrapper{
+        top: 38%;
+        left: 26%;
+    }
+    .intro_title{
+        font-size:  12px;
+    }
+    .intro_subtitle{
+        font-size: 24px;
+    }
+    .intro_text{
+        font-size: 10px;
+    }
+    .history_text{
+        font-size: 10px;
+    }
+    .history_score{
+        font-size: 26px;
+    }
+    .history_name{
+        font-size: 12px;
+    }
+    .gallery{
+        display: none;
+    }
+
 }

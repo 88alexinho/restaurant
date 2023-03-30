@@ -294,12 +294,12 @@ h1,h2,h3,h4,h5,h6,p{
     justify-content: space-between;
     text-align: left;
     align-items: center;
+    z-index: 2;
 }
 .sales_block{
     width: 50%;
     height: auto;
     padding: 93px 0 93px 0;
-    z-index: 2;
 }
 .sales_title{
     color: #D67E34;
