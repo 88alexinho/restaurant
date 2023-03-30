@@ -17,10 +17,13 @@ body{
     padding: 0 30px;
 }
 h1,h2,h3,h4,h5,h6,p{
-    margin: 0;
+    margin: 0; 
 }
 
-.btn {
+.btn-header,
+.btn-intro,
+.btn-sale,
+.btn-menu {
     font-family: 'Open Sans', sans-serif;
     display:inline-flex;
     align-items: center;
@@ -39,7 +42,10 @@ h1,h2,h3,h4,h5,h6,p{
     z-index: 2;
 }
 
-.btn:hover {
+.btn-header:hover,
+.btn-intro:hover,
+.btn-sale:hover,
+.btn-menu:hover {
     background-color: #914507;
     font-weight: 600;
 }
@@ -94,6 +100,9 @@ h1,h2,h3,h4,h5,h6,p{
     text-decoration: none;
     color: #fff;
 }
+.burger_menu{
+    display: none;
+}
 
 
 /* header end */
@@ -130,24 +139,6 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 20px;
 }
 
-.intro_text::before{
-    height: 2px;
-    width: 61px;
-    background-color: #fff;
-    position: absolute;
-    content: "";
-    top: 209px;
-    left: 295px;
-}
-.intro_text::after{
-    height: 2px;
-    width: 61px;
-    background-color: #fff;
-    position: absolute;
-    content: "";
-    top: 209px;
-    left: 575px;
-}
 /* intro end */
 
 /* about start */
@@ -393,7 +384,8 @@ h1,h2,h3,h4,h5,h6,p{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 1034px;
+    height: auto;
+    padding-bottom: 100px;
 
 }
 .menu_title{
@@ -522,19 +514,17 @@ h1,h2,h3,h4,h5,h6,p{
     justify-content: center;
     
 }
-.gallery_block{
+.gallery_left{
     margin-right: 30px;
-}
-.gallery_block:last-child {
-    margin-right: 0;
 }
 .gallery_up{
     display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 .gallery_down{
     display: flex;
-    margin-bottom: 30px;
+    justify-content: space-between;
 }
 .gallery_block-item:last-child{
     margin: 0;
